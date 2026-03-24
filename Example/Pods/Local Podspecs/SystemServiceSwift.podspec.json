@@ -29,19 +29,32 @@
   "subspecs": [
     {
       "name": "Network",
-      "source_files": "SystemServiceSwift/Classes/Network/**/*"
+      "source_files": "SystemServiceSwift/Classes/Network/**/*",
+      "frameworks": [
+        "UIKit",
+        "CoreTelephony",
+        "AppTrackingTransparency"
+      ]
     },
     {
       "name": "Storage",
-      "source_files": "SystemServiceSwift/Classes/Storage/**/*"
+      "source_files": "SystemServiceSwift/Classes/Storage/**/*",
+      "frameworks": "UIKit"
     },
     {
       "name": "Time",
-      "source_files": "SystemServiceSwift/Classes/Time/**/*"
+      "source_files": "SystemServiceSwift/Classes/Time/**/*",
+      "frameworks": "UIKit"
     },
     {
       "name": "Device",
-      "source_files": "SystemServiceSwift/Classes/Device/**/*"
+      "source_files": "SystemServiceSwift/Classes/Device/**/*",
+      "frameworks": [
+        "UIKit",
+        "CoreTelephony",
+        "AppTrackingTransparency",
+        "AdSupport"
+      ]
     }
   ],
   "swift_version": "5.0"

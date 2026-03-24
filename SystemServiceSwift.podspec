@@ -38,18 +38,23 @@ TODO: Add long description of the pod here.
   # 勿将 .swift 写入 public_header_files，否则 CocoaPods 会生成错误的 umbrella（#import "*.swift"）。
   s.subspec 'Network' do |network|
     network.source_files = 'SystemServiceSwift/Classes/Network/**/*'
+    network.frameworks = 'UIKit', 'CoreTelephony', 'AppTrackingTransparency'
   end
 
   s.subspec 'Storage' do |storage|
     storage.source_files = 'SystemServiceSwift/Classes/Storage/**/*'
+    # Darwin 仅作 Swift `import Darwin`，不是可链接的 framework，勿写入 frameworks。
+    storage.frameworks = 'UIKit'
   end
 
   s.subspec 'Time' do |time|
     time.source_files = 'SystemServiceSwift/Classes/Time/**/*'
+    time.frameworks = 'UIKit'
   end
 
   s.subspec 'Device' do |device|
     device.source_files = 'SystemServiceSwift/Classes/Device/**/*'
+    device.frameworks = 'UIKit', 'CoreTelephony', 'AppTrackingTransparency', 'AdSupport'
   end
   
 
