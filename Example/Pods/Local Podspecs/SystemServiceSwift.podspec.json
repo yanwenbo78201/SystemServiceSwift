@@ -1,0 +1,48 @@
+{
+  "name": "SystemServiceSwift",
+  "version": "0.1.0",
+  "summary": "A short description of SystemServiceSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yanwenbo78201/SystemServiceSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yanwenbo78201": "yanwenbo78201@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/yanwenbo78201/SystemServiceSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+  "source_files": "SystemServiceSwift/Classes/SystemService.swift",
+  "frameworks": [
+    "UIKit",
+    "CoreTelephony",
+    "AppTrackingTransparency",
+    "AdSupport"
+  ],
+  "subspecs": [
+    {
+      "name": "Network",
+      "source_files": "SystemServiceSwift/Classes/Network/**/*"
+    },
+    {
+      "name": "Storage",
+      "source_files": "SystemServiceSwift/Classes/Storage/**/*"
+    },
+    {
+      "name": "Time",
+      "source_files": "SystemServiceSwift/Classes/Time/**/*"
+    },
+    {
+      "name": "Device",
+      "source_files": "SystemServiceSwift/Classes/Device/**/*"
+    }
+  ],
+  "swift_version": "5.0"
+}

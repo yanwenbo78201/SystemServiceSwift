@@ -1,0 +1,6 @@
+framework module SystemServiceSwift {
+  umbrella header "SystemServiceSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

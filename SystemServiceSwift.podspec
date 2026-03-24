@@ -21,22 +21,43 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/crazyLuobo/SystemServiceSwift'
+  s.homepage         = 'https://github.com/yanwenbo78201/SystemServiceSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'crazyLuobo' => 'yanwenbo_78201@163.com' }
-  s.source           = { :git => 'https://github.com/crazyLuobo/SystemServiceSwift.git', :tag => s.version.to_s }
+  s.author           = { 'yanwenbo78201' => 'yanwenbo78201@gmail.com' }
+  s.source           = { :git => 'https://github.com/yanwenbo78201/SystemServiceSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'SystemServiceSwift/Classes/**/*'
+  s.swift_version = '5.0'
   
+  # 仅入口文件放在根 spec，避免与各 subspec 的目录重复编译。
+  s.source_files = 'SystemServiceSwift/Classes/SystemService.swift'
+
+  # 源码按子规格划分；`pod 'SystemServiceSwift'` 默认包含全部子规格。
+  # 勿将 .swift 写入 public_header_files，否则 CocoaPods 会生成错误的 umbrella（#import "*.swift"）。
+  s.subspec 'Network' do |network|
+    network.source_files = 'SystemServiceSwift/Classes/Network/**/*'
+  end
+
+  s.subspec 'Storage' do |storage|
+    storage.source_files = 'SystemServiceSwift/Classes/Storage/**/*'
+  end
+
+  s.subspec 'Time' do |time|
+    time.source_files = 'SystemServiceSwift/Classes/Time/**/*'
+  end
+
+  s.subspec 'Device' do |device|
+    device.source_files = 'SystemServiceSwift/Classes/Device/**/*'
+  end
+  
+
   # s.resource_bundles = {
   #   'SystemServiceSwift' => ['SystemServiceSwift/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+    s.frameworks = 'UIKit', 'CoreTelephony', 'AppTrackingTransparency', 'AdSupport'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

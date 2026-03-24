@@ -1,0 +1,24 @@
+PODS:
+  - SystemServiceSwift (0.1.0):
+    - SystemServiceSwift/Device (= 0.1.0)
+    - SystemServiceSwift/Network (= 0.1.0)
+    - SystemServiceSwift/Storage (= 0.1.0)
+    - SystemServiceSwift/Time (= 0.1.0)
+  - SystemServiceSwift/Device (0.1.0)
+  - SystemServiceSwift/Network (0.1.0)
+  - SystemServiceSwift/Storage (0.1.0)
+  - SystemServiceSwift/Time (0.1.0)
+
+DEPENDENCIES:
+  - SystemServiceSwift (from `../`)
+
+EXTERNAL SOURCES:
+  SystemServiceSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SystemServiceSwift: c584cc10db2d9818d1275b31079dc0ef97f721bd
+
+PODFILE CHECKSUM: 69b3bcba89aaebc7427f0b89c44119d241d82362
+
+COCOAPODS: 1.16.2

@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		685E46D0CD40E788AEDA97EB /* Pods_SystemServiceSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FA6E8C76FB7E96245B70DB /* Pods_SystemServiceSwift_Tests.framework */; };
+		9AD2907D2F72873900549A55 /* ServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2907C2F72873900549A55 /* ServiceViewController.m */; };
 		D7405F1F31A4D4757CFCB5A5 /* Pods_SystemServiceSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36054C95276505B05C3D1317 /* Pods_SystemServiceSwift_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		24ED4D50281D3AF9D67B189F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		24ED4D50281D3AF9D67B189F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		36054C95276505B05C3D1317 /* Pods_SystemServiceSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SystemServiceSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B322F4089890E3056DDF394 /* Pods-SystemServiceSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemServiceSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SystemServiceSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemServiceSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +43,14 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		64FA6E8C76FB7E96245B70DB /* Pods_SystemServiceSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SystemServiceSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75808A696F875B58612F48E9 /* SystemServiceSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SystemServiceSwift.podspec; path = ../SystemServiceSwift.podspec; sourceTree = "<group>"; };
-		883A8684F8A803C2315A36A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		75808A696F875B58612F48E9 /* SystemServiceSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SystemServiceSwift.podspec; path = ../SystemServiceSwift.podspec; sourceTree = "<group>"; };
+		883A8684F8A803C2315A36A9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8C16A815DA083AE3E91D32F0 /* Pods-SystemServiceSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemServiceSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		98A46C70CCD47F626BDB4D99 /* Pods-SystemServiceSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemServiceSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-SystemServiceSwift_Tests/Pods-SystemServiceSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		99568B52E6AEB24B06028240 /* Pods-SystemServiceSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SystemServiceSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SystemServiceSwift_Tests/Pods-SystemServiceSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AD2907A2F72873900549A55 /* SystemServiceSwift_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SystemServiceSwift_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AD2907B2F72873900549A55 /* ServiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceViewController.h; sourceTree = "<group>"; };
+		9AD2907C2F72873900549A55 /* ServiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +108,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				9AD2907B2F72873900549A55 /* ServiceViewController.h */,
+				9AD2907C2F72873900549A55 /* ServiceViewController.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				9AD2907A2F72873900549A55 /* SystemServiceSwift_Example-Bridging-Header.h */,
 			);
 			name = "Example for SystemServiceSwift";
 			path = SystemServiceSwift;
@@ -156,7 +163,6 @@
 				99568B52E6AEB24B06028240 /* Pods-SystemServiceSwift_Tests.debug.xcconfig */,
 				98A46C70CCD47F626BDB4D99 /* Pods-SystemServiceSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +177,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E736B0E8FEB093282E86AB07 /* [CP] Embed Pods Frameworks */,
+				0CAFBDD8F243170DA8CB1D9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,7 +219,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1640;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +269,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0CAFBDD8F243170DA8CB1D9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SystemServiceSwift/SystemServiceSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SystemServiceSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		873225BC6464439E3DA8F6FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,24 +307,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E736B0E8FEB093282E86AB07 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SystemServiceSwift/SystemServiceSwift.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SystemServiceSwift.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SystemServiceSwift_Example/Pods-SystemServiceSwift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F3331AAB2736C105F311A4A1 /* [CP] Check Pods Manifest.lock */ = {
@@ -333,6 +340,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9AD2907D2F72873900549A55 /* ServiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,11 +486,15 @@
 			baseConfigurationReference = 4B322F4089890E3056DDF394 /* Pods-SystemServiceSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SystemServiceSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SystemServiceSwift/SystemServiceSwift_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,11 +505,14 @@
 			baseConfigurationReference = 8C16A815DA083AE3E91D32F0 /* Pods-SystemServiceSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SystemServiceSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SystemServiceSwift/SystemServiceSwift_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
